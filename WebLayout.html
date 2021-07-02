@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+	 <title>Web Layout</title>
+	 <meta name="viewport"> content="width=device-width, initial-scale=1.0">
+	 <style type="text/css">
+	 
+	 #header{
+	 background-color: black;
+	 color: red;
+	 text-align:left;
+	 padding:10px;
+	 }
+	 
+	 #header h3{
+	 text-align:right;
+	 }
+	 
+	 #navbar{
+	  background-color: lightgreen;
+	  height: 20px;
+	 }
+	 #navbar li{
+	  display: inline;
+	  padding: 20px;
+	 }
+	 
+	 #main img{
+	     width: 50%;
+		 height: 40%;
+		 margin: 40px;
+	 
+	 }
+	 #main{
+	   font-size:30px;
+	   font-family: monospace;
+	 }#main{
+	    font-size: 30px;
+		font-family: monospace;
+	 }
+	 
+	 #footer{
+	   background-color: black;
+	   color: green;
+	   text-align: center;
+	   height: 50px;
+	   padding: 60px;
+	   position: sticky;
+	   bottom: 0px;
+	 }
+	 /*mobile device*/
+	 @media all and (min-width: 300px) and (max-width: 500px){
+	   #main{
+	   font-size: 10px;
+	   font-family: monospace;
+	   color: cyan;
+	 }
+	 
+	 #main img{
+	  height: 50%;
+	  width: 40%;
+	 }
+	 }
+	 
+	 /* tab device*/
+	 @media all(min-width:500px) and (max-width:1000px) and (min-height: 600px)
+	 and (max-height: 100px){
+	  #main{
+	   font-size: 20px;
+	   font-family: monospace;
+	   color: blue;
+	 }  
+	 }
+	 
+	 /*desktop device*/
+	  @media all and(min-width:1000px){
+	  #main{
+	   font-size: 30px;
+	   font-family: monospace;
+	   color: green;
+	 }  
+	 }
+	 
+	 @media all and (orientation: landscape){
+	  #main{
+	  font-size:30px;
+	  font-family:monospace;
+	  color: green;
+	  }
+	 @media all and(orientation: portrait) and (min-height: 1001px){
+	  #main{
+	  font-size:30px;
+	  font-family:monospace;
+	  color:limegreen;
+	  
+	  }
+	 }
+	 </style>
+</head>
+<body>
+
+ <div id="header"> <h1>FootBall</h1> <h3>Contact:sunil@gmail.com</h3></div>
+ <div id="navbar">
+  <ul>
+      <li><a href="#">Home</li>
+	  <li><a href="">About</li>
+	  <li><a href="">Contact</li>
+  </ul>
+</div>
+     <div id="main">
+<img src= " https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/BC_Place_2015_Women%27s_FIFA_World_Cup.jpg/1200px-BC_Place_2015_Women%27s_FIFA_World_Cup.jpg">
+
+The various codes of football share certain common elements and can be 
+grouped into two main classes of football: carrying codes like American
+ football, Canadian football, Australian football, rugby union and rugby
+ league, where the ball is moved about the field while being held in the
+ hands or thrown, and kicking codes such as Association football and
+ Gaelic football, where the ball is moved primarily with the feet, and 
+ where handling is strictly limited.
+ 
+</div>
+<div id="footer">FootBall - Fifa.com</div>
+
+<div> Fifa world cup</div>
+
+</body>
+</html>
